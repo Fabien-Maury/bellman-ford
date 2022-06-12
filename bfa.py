@@ -11,10 +11,11 @@ def bfa(graph, source):
         distances[edge[1]] = distances[edge[0]] + edge[2]
         previous[edge[1]] = edge[0]
 
-  extra_distances = distances.copy()
-  for edge in edges:
-      if extra_distances[edge[0]] + edge[2] < extra_distances[edge[1]]:
-        extra_distances[edge[1]] = extra_distances[edge[0]] + edge[2]
+  for i in range(len(vertices)):
+    extra_distances = distances.copy()
+    for edge in edges:
+        if extra_distances[edge[0]] + edge[2] < extra_distances[edge[1]]:
+          extra_distances[edge[1]] = extra_distances[edge[0]] + edge[2]
   
   for vertex in vertices:
     former = distances[vertex]
