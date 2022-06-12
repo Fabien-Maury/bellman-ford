@@ -3,7 +3,7 @@ Python3 implementation of Bellman-Ford algorithm for shortest path in negative-w
 
 * Input : 
   graph : a tuple containing vertices, a list of vertices; and edges, a list of edges written as : (vertex1, vertex2, weight)
-  source : the vertex used as soiurce for the pathes
+  source : the vertex used as source for the pathes
   
 * Output : 
   a tuple containing : 
